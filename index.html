@@ -5,16 +5,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="./slick-theme.css" media="screen" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/top.css" />
   <link rel="icon" href="./favicon.ico">
   <title>カービィポータルのコピー</title>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="./slick/slick.min.js"></script>
 </head>
 
 <body>
   <header>
-    <div class="container">
       <h1 class="logo"><a href="./index.html"><img src="./media/logo.png" alt="ロゴです"></a></h1>
       <div class="hamburger-btn">
         <span></span>
@@ -32,19 +34,32 @@
           <li><a href="./music/index.html">ミュージック</a></li>
         </ul>
       </nav>
-    </div>
   </header>
-  <section>
-    <div class="container">
       <section class="top-main-slider">
-        <div class="top-main-slider-img">
-
-        </div>
+          <div class="top-main-slider-items">
+            <a href="#">
+              <img src="media/top/keito.png" alt="毛糸のカービィ" class="top-main-slider-items-pc">
+              <img src="media/top/keito_sp.png" alt="毛糸のカービィ" class="top-main-slider-items-sp">
+            </a>
+            <a href="#">
+              <img src="media/top/sutaara.png" alt="スターアライズ" class="top-main-slider-items-pc">
+              <img src="media/top/sutaara_sp.png" alt="スターアライズ" class="top-main-slider-items-sp">
+            </a>
+            <a href="#">
+              <img src="media/top/ksa_ost.png" alt="オリジナルサウンドトラック" class="top-main-slider-items-pc">
+              <img src="media/top/ksa_ost_sp.png" alt="オリジナルサウンドトラック" class="top-main-slider-items-sp">
+            </a>
+            <a href="#">
+              <img src="media/top/cafe.png" alt="カービィカフェ" class="top-main-slider-items-pc">
+              <img src="media/top/cafe_sp.png" alt="カービィカフェ" class="top-main-slider-items-sp">
+            </a>
+            <a href="#">
+              <img src="media/top/battledx.png" alt="バトルデラックス" class="top-main-slider-items-pc">
+              <img src="media/top/battledx_sp.png" alt="バトルデラックス" class="top-main-slider-items-sp">
+            </a>
+          </div>
       </section>
-    </div>
-  </section>
   <footer>
-    <div class="container">
       <div class="footer_content">
         <div class="footer_banner">
           <a href="https://kirbycafe.jp/"><img src="./media/banner_cook.png" alt="カフェサイトへ" class="footer_cafe"></a>
@@ -69,7 +84,6 @@
       <a href="#" class="footer_to_top">
         <img src="./media/cannon.png" alt="トップに戻る大砲">
       </a>
-    </div>
   </footer>
   <script src="./js/script.js"></script>
 </body>
