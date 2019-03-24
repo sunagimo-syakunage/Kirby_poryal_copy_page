@@ -328,6 +328,7 @@ footer{
   }
 
   .footer_content {
+    width: 80%;
     justify-content: space-between;
   }
 
