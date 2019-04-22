@@ -30,6 +30,7 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 10px;
+  justify-content: space-between;
 }
 
 /* バックグラウンドにディープピンクストライプ */
@@ -38,7 +39,7 @@ header, footer {
   background: url(../media/bg_dp_st.png);
 }
 
-footer{
+footer .container {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -52,7 +53,7 @@ footer{
 
   /* flexプロパティたち */
   .gnav>ul,
-  header,
+  header .container,
   .footer_content {
     display: -webkit-flex;
     display: -ms-flex;
@@ -178,8 +179,7 @@ header {
 }
 
 @media screen and (min-width:991px) {
-
-  body{
+  body {
     padding-top: 84px;
   }
 
@@ -189,6 +189,7 @@ header {
     z-index: 997;
     justify-content: space-between;
   }
+
   .logo {
     margin: 0;
     width: 190px;
@@ -207,10 +208,11 @@ header {
   }
 
   .gnav {
+    display: block;
     position: static;
     opacity: 1;
     padding: 0;
-    width: auto;
+    width: 680px;
     background: none;
   }
 
@@ -238,9 +240,8 @@ header {
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 フッター
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-footer{
+footer {
   height: 363px;
-  justify-content: space-between;
 }
 
 .footer_banner>* {
@@ -323,7 +324,7 @@ footer{
 }
 
 @media screen and (min-width:991px) {
-  footer{
+  footer {
     height: 145px;
   }
 
@@ -333,12 +334,16 @@ footer{
   }
 
   .footer_nav_ul {
-    margin-left: 100px;
+    margin-left: 5vw;
   }
 
   .footer_logos {
-    margin-left: 50px;
+    margin-left: 2vw;
     width: 180px;
+  }
+
+  .footer_to_top {
+    width: 140px;
   }
 }
 
